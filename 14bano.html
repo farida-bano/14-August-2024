@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14th August - Independence Day</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url(map.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(23, 19, 19);
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            padding: 50px;
+            background: rgba(173, 242, 121, 0.7);
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image {
+            width: 200px; /* Increased size */
+            height: auto;
+            animation: bounce 2s infinite; /* Same animation for both images */
+        }
+
+        .slogan {
+            font-size: 3em;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="myhero.jpeg" alt="Quaid-e-Azam" class="image">
+            <h1 class="slogan"> آپ سب کو میری طرف سے جشن ازادی بہت بہت مبارک ہو پاکستان زندہ باد</h1>
+            <img src="flage.png" alt="Pakistani Flag" class="image">
+        </header>
+    </div>
+</body>
+</html>
+
